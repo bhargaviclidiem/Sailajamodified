@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<!-- <listener class-name="org.uncommons.reportng.HTMLReporter"/> <listener 
+			class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
+		<!-- <listener class-name="Listeners.TestListener"></listener> -->
+		<listener class-name="Listeners.TestListener" />
+	<!-- <listener class-name="listeners.AnnotationTransformer" />-->
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+		<class name="HomePage_Tests.LoginTest">
+				<methods>
+					<exclude name="testCase_01"/>
+				</methods>
+			</class>
+			<class name="SurveyPage_Tests.SurveyTestCase">
+				<methods>
+					<exclude name="TestCase101_SurveyAnonymous_CheckBox_QSavePublish" />
+					<exclude name="TestCase102_SurveyAnonymous_CheckBox_SaveDraft" />
+					<exclude name="TestCase103_SuveryAnonymous_Date_QSaveDraft" />
+					<exclude name="TestCase104_Survey_Anonymous_Checkbox_Date_QSavePublish" />
+					<exclude name="TestCase105_SurveyRewardSingleWinner" />
+					<exclude name="TestCase106_SurveyRewardMultiWinner" />
+					<exclude name="TestCase107_Survey_Anonymous_Dropdown_Singlewinner_Publish" />
+					<exclude name="TestCase108_Survey_Anonymous_FileUpload_Singlewinner_Publish" />
+					<exclude name="TestCase109_Survey_Anonymous_GroupScaling_Singlewinner_Publish" />
+					<exclude name="TestCase110_Survey_Anonymous_ImagePoll_Singlewinner_Publish" />
+					<exclude name="TestCase111_Survey_Anonymous_ImageWithText_Singlewinner_Publish" />
+					<exclude name="TestCase112_Survey_Anonymous_MultipleSelectDropdown_Singlewinner_Publish" />
+					<exclude name="TestCase113_Survey_Anonymous_MultipleTextBoxes_Singlewinner_Publish" />
+					<exclude name="TestCase114_Survey_Anonymous_NPSScore_Singlewinner_Publish" />
+					<exclude name="TestCase115_Survey_Anonymous_Number_Singlewinner_Publish" />
+					<exclude name="TestCase116_Survey_Anonymous_RadioButton_Singlewinner_Publish" />
+					<exclude name="TestCase117_Survey_Anonymous_ScaleRate_Singlewinner_Publish" />
+					<exclude name="TestCase118_Survey_Anonymous_SingleLineText_Singlewinner_Publish" />
+					<exclude name="TestCase119_Survey_Anonymous_TextArea_Singlewinner_Publish" />
+					<exclude name="TestCase120_Survey_Anonymous_YesOrNo_Singlewinner_Publish" />
+					<exclude name="TestCase121_Survey_Anonymous_DropdownWithWiseWeightages_Singlewinner_Publish" />
+					<exclude name="TestCase122_Survey_Anonymous_RadioButtonWithWiseWeightages_Singlewinner_Publish" />
+					<exclude name="TestCase123_Survey_Anonymous_ScaleRateWithWiseWeightages_Singlewinner_Publish" />					
+					<exclude name="TestCase124_Survey_Anonymous_YesOrNoWithWiseWeightages_Singlewinner_Publish" />
+					<exclude name="TestCase125_SavedQuestion_Default_Singlewinner_Publish" />
+					<exclude name="TestCase126_AllowAnonymous_QuestionPage_SaveAndPublish" />
+					<exclude name="TestCase127_LandingPage_QuestionPage_SaveAndPublish" />
+					<exclude name="TestCase128_Languages_QuestionPage_SaveAndPublish" />
+					<exclude name="TestCase129_AllowAnonymous_LogicPage_SaveAndPublish" />
+					<exclude name="TestCase130_LandingPage_LogicPage_SaveAndPublish" />
+					<exclude name="TestCase131_Languages_LogicPage_SaveAndPublish" />
+					<exclude name="TestCase132_AllowAnonymous_PreviewAndCust_SkipAndPublish" />
+					<exclude name="TestCase133_LandingPage_PreviewAndCust_SkipAndPublish" />
+					<exclude name="TestCase134_Languages_PreviewAndCust_SkipAndPublish" />
+					<exclude name="TestCase135_AllowAnonymous_PreviewAndCust_SaveAndPublish" />
+					<exclude name="TestCase136_LandingPage_PreviewAndCust_SaveAndPublish" />
+					<exclude name="TestCase137_Languages_PreviewAndCust_SaveAndPublish" />
+					<exclude name="TestCase138_AllowAnonymous_Rewards_SaveAndPublish" />
+					<exclude name="TestCase139_LandingPage_Rewards_SaveAndPublish" />
+					<exclude name="TestCase140_Languages_Rewards_SaveAndPublish" />
+					<exclude name="TestCase141_AllowAnonymous_Rewards_SkipAndPublish" />
+					<exclude name="TestCase142_LandingPage_Rewards_SkipAndPublish" />
+					<exclude name="TestCase143_Languages_Rewards_SkipAndPublish" />
+					<exclude name="TestCase144_MultipleWinner_EveryDays_Cash" />
+					<exclude name="TestCase145_MultipleWinner_EveryDays_Unlimited_Cash" />
+					<exclude name="TestCase146_MultipleWinner_EveryDays_Auto_Cash" />
+					<exclude name="TestCase147_MultipleWinner_EveryDays_UnlimitedAndAuto_Cash" />
+					<exclude name="TestCase148_MultipleWinner_EveryDays_Exclude_Cash" />
+					<exclude name="TestCase149_MultipleWinner_EveryDays_UnlimitedAndAutoAndExclude_Cash" />
+					<exclude name="TestCase150_MultipleWinner_AllEvent_Cash" />
+					<exclude name="TestCase151_MultipleWinner_AllEvent_Unlimited_Cash" />
+					<exclude name="TestCase152_MultipleWinner_AllEvent_Unlimited_Cash" />
+					<exclude name="TestCase153_MultipleWinner_AllEvent_UnlimitedAndAuto_Cash" />
+					<exclude name="TestCase154_MultipleWinner_First_Cash" />
+					<exclude name="TestCase155_MultipleWinner_First_Unlimited_Cash" />
+					<exclude name="TestCase156_MultipleWinner_First_Auto_Cash" />
+					<exclude name="TestCase157_MultipleWinner_First_UnlimitedAndAuto_Cash" />
+					<exclude name="TestCase158_MultipleWinner_EveryDays_Points_WithRedeem" />
+					<exclude name="TestCase159_MultipleWinner_EveryDays_Online_Products" />
+					<exclude name="TestCase160_MultipleWinner_EveryDays_Offline_Products" />
+								
+				</methods>
+			</class> <!-- Survey -->
+
+			<class name="EvaluatorPage_Tests.EvaluatorTestCase">
+				<methods>
+					<exclude name="TestCase201_Evaluator_WithDuration_TotalID_Equal_SingleWinner_CheckBoxQuestion" />
+					<exclude name="TestCase202_Evaluator_WithDuration_TotalID_Individual_SingleWinner_CheckBoxQuestion" />
+					<exclude name="TestCase203_Evaluator_WithDuration_EqualID_Equal_SingleWinner_CheckBoxQuestion" />
+					<exclude name="TestCase204_Evaluator_WithDuration_EqualID_Individual_SingleWinner_CheckBoxQuestion" />
+					<exclude name="TestCase205_Evaluator_WithDuration_IndividualID_Equal_SingleWinner_CheckBoxQuestion" />
+					<exclude name="TestCase206_Evaluator_WithDuration_IndividualID_Individual_SingleWinner_CheckBoxQuestion" />
+					<exclude name="TestCase207_Evaluator_WithoutDuration_Expires_EqualW_SingleWinner_CheckBoxQuestion" />
+					<exclude name="TestCase208_Evaluator_WithoutDuration_Expires_IndividuaW_SingleWinner_CheckBoxQuestion" />
+					<exclude name="TestCase209_Evaluator_WithDuration_TotalID_Equal_CheckBoxQuestion_QuestionPageSaveDraftAndPublish" />
+					<exclude name="TestCase210_Evaluator_WithDuration_TotalID_Equal_CheckBoxQuestion_PreviewAndCustomizePageSaveDraftAndPublish" />
+					<exclude name="TestCase211_Evaluator_WithDuration_TotalID_Equal_SingleWinner_DateQuestion" />
+					<exclude name="TestCase212_Evaluator_WithDuration_TotalID_Equal_SingleWinner_DropdownWithoutWeightageQuestion" />
+					<exclude name="TestCase213_Evaluator_WithDuration_TotalID_Equal_SingleWinner_FileUploadQuestion" />
+					<exclude name="TestCase214_Evaluator_WithDuration_TotalID_Equal_SingleWinner_GroupScalingQuestion" />
+					<exclude name="TestCase215_Evaluator_WithDuration_TotalID_Equal_SingleWinner_GroupScalingQuestion" />
+					<exclude name="TestCase216_Evaluator_WithDuration_TotalID_Equal_SingleWinner_MultipleSelectDropdownQuestion" />
+					<exclude name="TestCase217_Evaluator_WithDuration_TotalID_Equal_SingleWinner_MultipleTextBoxesQuestion" />
+					<exclude name="TestCase218_Evaluator_WithDuration_TotalID_Equal_SingleWinner_NumberQuestion" />
+					<exclude name="TestCase219_Evaluator_WithDuration_TotalID_Equal_SingleWinner_PictionaryQuestion" />
+					<exclude name="TestCase220_Evaluator_WithDuration_TotalID_Equal_SingleWinner_RadioButtonQuestion" />
+					<exclude name="TestCase221_Evaluator_WithDuration_TotalID_Equal_SingleWinner_ScaleRateQuestion" />
+					<exclude name="TestCase222_Evaluator_WithDuration_TotalID_Equal_SingleWinner_SingleLineTextQuestion" />
+					<exclude name="TestCase223_Evaluator_WithDuration_TotalID_Equal_SingleWinner_TextAreaQuestion" />
+					<exclude name="TestCase224_Evaluator_WithDuration_TotalID_Equal_SingleWinner_YesOrNoQuestion" />
+								
+				</methods>
+			</class> <!-- Evaluator -->
+			
+			<class name="SubscriptionsPage.SubscriptionTestCases">
+			<methods>
+			
+			        <exclude name="TestCase101_Subscription_single_price_Maxnoof_individua_save_Reminders" />
+					<exclude name="TestCase102_Subscription_itemized_price__Maxnoof_Bundle_Save_Reminders" />
+					<exclude name="TestCase103_Products_single_price__Maxnoof_individual_Approvalchk_Save_Reminders" />
+					<exclude name="TestCase104_Products_Itemized_price__Maxnoof_Bundle_Save_Reminders" />
+					<exclude name="TestCase105_Products_Itemized_price__Maxnoof_Bundle__Reminders_save" />
+					<exclude name="TestCase106_Subscription_Itemized_price__Maxnoof_Bundle_Reminders_Save" />
+			
+			</methods>
+			</class> <!-- Subscriptions -->
+			
+			
+			
+			
+			
+			
+			
+			
+	
+			<class name="TriviaPage_Tests.TriviaTestCases">
+				<methods>
+					<exclude name="TestCase_201_Trivia_CheckBox_QuestionType_SingleWinnerReward_Publish" />
+					<exclude name="TestCase_202_Trivia_Dropdown_QuestionType_SingleWinnerReward_Publish" />
+					<exclude name="TestCase_203_Trivia_ImagePoll_QuestionType_SingleWinnerReward_Publish" />
+					<exclude name="TestCase_204_Trivia_MultipleSelectDropdown_QuestionType_SingleWinnerReward_Publish" />
+					<exclude name="TestCase_205_Trivia_Radiobutton_QuestionType_SingleWinnerReward_Publish" />
+					<exclude name="TestCase_206_Trivia_CheckBoxQuestionPage_SaveAsDraft" />
+					<exclude name="TestCase_207_Trivia_CheckBoxQuestion_QuestionPage_SaveAndPublish" />
+					<exclude name="TestCase_208_Trivia_CheckBoxQuestion_PreviewAndCustomize_SaveAndPublish" />
+					<exclude name="TestCase_209_Trivia_CheckBoxQuestion_PreviewAndCustomize_SkipAndPublish" />
+					<exclude name="TestCase_210_Trivia_CheckBoxQuestion_Rewards_SaveAndPublish" />
+					<exclude name="TestCase_211_Trivia_CheckBoxQuestion_Rewards_SkipAndPublish" />								
+				</methods>
+			</class> <!-- Trivia -->
+			
+<!-- 		<class name="EmailMarketingPage_Tests.EmailMarketingTest">
+				<methods>
+					<exclude name="TestCase401_EmailMarketing" />
+				</methods>
+			</class> 
+-->
+			<class name="EventPage_Tests.EventsTestCases">
+				<methods>
+					<include name="TestCase501_Organizer_OnlE_ODay_Sponsor_Presenter_Ticket_Refund" />
+					<exclude name="TestCase502_Organizer_OnlE_ODay_Sponsor_Presenter_Ticket_Refund" />
+					<exclude name="TestCase503_Organizer_OnlE_ODay_Exhibitor_Presenter_Ticket_Refund" />
+					<exclude name="TestCase504_Organizer_OnlE_ODay_Exhibitor_Presenter_Ticket_Refund" />
+					<exclude name="TestCase505_Organizer_OnlE_ODay_Topic_Speaker_Ticket_Refund" />
+					<exclude name="TestCase506_Organizer_OnlE_ODay_Topic_Speaker_Ticket_Refund" />
+					<exclude name="TestCase507_Organizer_OnlE_MDay_Sponsor_Presenter_Ticket_Refund" />
+					<exclude name="TestCase508_Organizer_OnlE_ODay_Exhibitor_Presenter_Ticket_Refund" />
+					<exclude name="TestCase509_Organizer_OnlE_ODay_Topic_Speaker_Ticket_Refund" />
+					<exclude name="TestCase510_Sponsor_OnlE_ODay_Sponsor_Presenter_Refund" />
+					
+<!--  -->					<exclude name="TestCase101_Organizer_OnlE_ODay_Challenges_judge_Save" />
+				</methods>
+			</class> <!-- Events -->
+			
+			<class name="MarketPlace_Tests.MarketplaceTestCases">
+				<methods>
+					<exclude name="TestCase602_1_MarketPlaceServices_Service_IwillPay_Daily" />
+					<exclude name="TestCase602_2_MarketPlaceServices_Service_PartiWillPay_Daily" />
+					<exclude name="TestCase603_1_MarketPlaceHotels_WillPay_Refund_Percentage" />
+					<exclude name="TestCase603_2_MarketPlaceHotels_PartWillPay_Refund_Amount" />
+					<exclude name="TestCase604_MarketPlaceSponsorPackage" />
+					<exclude name="TestCase605_1_MarketplaceCouponCodes_EventAmount" />
+					<exclude name="TestCase605_2_MarketplaceCouponCodes_EventPercentage" />
+				</methods>
+			</class> <!-- MarketPlace -->
+
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
